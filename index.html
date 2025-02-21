@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stable Diffusion API</title>
+</head>
+<body>
+    <h1>Stable Diffusion API Usage</h1>
+    <p>Use the following API endpoint to generate images from text prompts:</p>
+    <p><strong>POST</strong> <code>/generate</code></p>
+    <h2>Example Request</h2>
+    <pre>
+    curl -X POST "http://localhost:8000/generate" \
+    -H "Content-Type: application/json" \
+    -d '{"prompt": "Astronaut in a jungle, cold color palette, muted colors, detailed, 8k"}'
+    </pre>
+    <p>The response will contain a base64-encoded image that can be displayed in your project.</p>
+</body>
+</html>
